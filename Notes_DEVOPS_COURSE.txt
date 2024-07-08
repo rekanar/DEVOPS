@@ -1,0 +1,590 @@
+What is DEVOPS?
+
+DEVOPS is a culture helps in increase of organization ability to deliver
+applications
+
+it has a culture that imrpves oraizzational ability to delivery
+delivery is the key factor
+
+end goal of organization is delivery 
+
+Improving delivery by automation
+to reduce manual effort
+Quality
+Monitoring ensure the quality
+Testing with it can not ensure qulity
+
+The proecss of continuning delivery 
+
+Build
+Test
+Deployment
+
+with quality and ith continous monitor and continous integration
+
+Defination - devops is a process or culture to improve the applciation delivery
+ by doigng following
+ 
+ 1. Automation
+ 2. Quality
+ 3. Continous Monitoring
+ 4. testing
+ 
+ Faster Delivery process
+ 
+ Before devops Build/Release/Configuration Manager used to deploy builds
+ DEV used to develeop
+ and there will be central location and sever admin had to create
+ application server on machine
+ once app is deployed tested by QA
+ BRE used to take the passed rrelease to next stage environment
+ 
+ Before DEVOPS
+ following roles used to particpate in deployment process
+ SYS ADMIN
+ BRE
+ Server ADMIN
+ End goal is to delievery the app from DEV machine to Customer
+ 
+ requiremets to test application
+ 1. Application
+ Server--- created by SySAdmin like VMWare, Openstack, 
+ 2. End of the day you have to test on server
+ 3. BRE will deploy the app build to the App server
+ 4. Server Admin used to create APP server and other security issues.
+ 
+ From the above Multiple people involvved a and process not ansnd this is manual effort
+ to automate the process DEVOPS culture emerged.
+ 
+ Different teams are collbrating take more time and not effective
+ 
+ DEVOPS culture that improves delivery
+ the way of work
+ 
+ 1. What is your exp?
+ Hi Am Santhos R and i have been working as DEVOPS engineer for past 4 to 5 years before that I have worked as 
+ Software engineer over 6 years on .NET platfrom with technologies like .net framework, Angular, Asp.net MVC and Asp.net core.
+ I am previously coming with exp
+ 
+2. Explain Current responsibi;ties?
+ 
+ in the curretn organization
+ I take care of automation,
+ ensure application quality,
+ I have ensure that I have setup contionous monitoring 
+ Automate testing process in to devops life cycle
+ 
+ 
+ Currently workin on platfrom CI?CD using GIT HUB actions
+ For Deployment on Container orchestration using Kuberentees
+ Using Configuration manager as Ansible
+ Automation using Terraform
+ 
+ --------------------------------------------------------
+ 
+ Efficient usage of resources
+ that where virtual machine comes in to play
+ 
+ server - used to deploy application from locallaptop to deliver to the real customer
+ all apps are hosted in server to access services
+ 
+ Example.com --> they bought 5 servers of 100 gb , 100 croe from DELL
+ 
+ SysAdmin
+ 
+ App1 deployed on serves1 and App1 required 4gb, 4 cores and you wasting resource ineeficiently
+ use of serves1
+ 
+ 10% of actual resorces are used
+ Unutilizing resources/ Inefficiney of utilizing resource
+ 
+ Virtualization?
+ 
+ Physical server from HP you have install a hypervisor
+ it is a software that can isntall vitrual machine on bare server
+ logical isolation of servers
+ 
+ popular hypervisors are VMWARE, Zen
+ break physical serves in to logical machines
+ 
+ this vm are have their own ram and cpu
+ 
+ -----------------------------------------------------
+ 
+ Efficiency
+ Automation--- Automating the process will save time and money with no errors
+ usin  script --- the process is same for any cloud provider 
+ they provide API
+ 
+ EC2 services bunch of developer. They expose EC2 API of the server
+ this API would receive a request as in expcected format once it request is valid
+ authneticated, authorized.
+ 
+ To automate the process we can write a script using 
+ the below.
+ 
+ AWS/AZURE CLI
+ AWS API
+ AWS CFT( Cloud formation Template)
+ TERRAFORM -- 1 Terraform multiple cloud platfroms	+
+ AWS CDK is best
+ 
+ Creating manual step is ineffeicent way
+ 
+ How do you create 100 vm's in your orgaization
+ or
+ What is the automation your using to create infratruecture in your organixation
+ 
+ dont do something it has popular
+ do only as per organization platfrom
+ 
+ If you are using multiple cloud platforms use terraforms 
+ 
+ If you  are working on single cloud platform gowith CLI, CDK, API or Azure resource Manager pioneer
+ because they have early access and any access to any resource on that platfrom
+ 
+ signin.AWS.COM
+ 
+ ----------------------------------------------------------
+ 
+ Hw to connect virtual machines on cloud?
+ 
+ 1. Using Azure CLI or AWS CLI
+ 2. Using terminals like winscp, Iterm on mac, putty, Mobaxterm-- good look and feel, NoMachine
+ 
+ 
+ Today's practical
+ 
+ Create Ubantu virtual machine using Azure CLI and access it from any terminal and create a file on it.
+ 
+ sandboz learn microsoft
+ 
+ ---------------------------------------------------------------
+ 
+ 
+ az vm create --resource-group res_santh --name ubuntu-vm1 --image ubuntu2204 --admin-username azureuser --ssh-key-value C:\Users\SantoshRekanar\.ssh/id_rsa.pub --size Standard_DS1_v2
+
+
+ssh azureuser@172.173.162.232
+ 
+ 
+ Create Ubantu and deploy reactjs applciation
+ 
+ 1. sudo apt update
+ 
+ 2. sudo apt upgrade
+ 
+ 3. sudo apt install nginx
+ 
+ 4. sudo systemctl start nginx
+ 
+ 5. curl localhost to check wether nginx server is running or not
+ 
+ 6. Add Inbound rule in Network Security Group to enable outside traffic
+ 
+ 7. Now switch Linux server Navigate to the following path
+ cd /etc
+ cd /var
+ cd /www/html
+ 
+ 8. sudo apt install git
+ 
+ open git bash in folder and login and type below to clone
+ 
+ 9. git clone https://github.com/aditya-sridhar/simple-reactjs-app.git
+ 
+ 10. create folder on yoour machine
+ 
+ 11. git bash here in that folder
+ 
+ 12. git init
+ 
+ 13. git clone https://github.com/aditya-sridhar/simple-reactjs-app.git
+ 
+ 14. remove fir folders from cloned
+ 
+ 15. git init
+ 
+ 16. git commit -m "commits"
+ 
+ 17. git branch -M main
+ 
+ 18. Login to the github account and create REACT repo
+ 
+ 19. git remote add origin https://github.com/rekanar/REACT.git
+ 
+ 20. git push -u origin main
+ 
+ -------------------------Again come back to the Ubantu VM fro deployment
+ 
+ 21. sudo git clone https://github.com/rekanar/REACT.git
+ 
+ 22. node install sudo apt install nodejs
+ 
+ 23. sudo apt install npm
+ 
+ 24. 
+ 
+ ---------------------------------------------------Deploying Reactjs on Azure Ubantu machine
+ 
+ References -  https://www.youtube.com/watch?v=V5qCPMiLIeU
+ 
+1. Login to the zure trhough azure cli
+ 
+az login
+
+az account set --subscription <SubscriptionId>
+
+az account show
+ 
+ 2. Create Resource Group --- 
+ 
+ az group create --name res-santh --location eastus
+ 
+ 2. Script to create ubantu VM
+ 
+ az vm create --resource-group res-santh --name AZUbantuVM1 --image ubuntu2204 --admin-username azureuser --admin-password UbantuWelcome123! --size Standard_DS1_v2
+ 
+ 3. Login to the uabantu machine
+
+ ssh azureuser@52.149.138.127
+ 
+ 4. Create an Inbound Ip rule for HTTP 80 in network settings using script or axure portal to allow traffic from outside this vm
+ 
+ 5. git clone https://github.com/Deepcodr/react-hello-world.git
+ 
+ 6. cd react-hello-world/
+ 
+ 7. sudo apt-get update
+ 
+ 8.  Install Node js
+ 
+ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+ 9.
+ 
+ Refreshing Shell Configuration: When you run source ~/.bashrc, you are essentially telling Bash to re-read the .bashrc file.
+Applying Changes Immediately: This is useful when you have made changes to your .bashrc file (such as adding new aliases or environment variables) and want those changes to take effect in your current shell session without having to start a new shell session.
+ 
+ source ~/.bashrc
+
+10. nvm install --lts
+ 
+11. nvm alias default 20.15.0
+
+12. node -v, npm -v
+
+13. install required node modules for the project
+
+npm i
+
+ls
+
+npm start
+
+CTRL+Z
+
+14. bg ---run npm at background
+
+15. curl http://localhost:3000/hello
+
+16. install and configure nginx server
+
+sudo apt install nginx
+
+17. check nginx
+
+systemctl status nginx
+
+18. sudo su
+
+19. cd /etc/nginx/
+
+20. nano nginx.config
+
+21. cd conf.d/
+
+22. cd..
+
+23. cd sites-available/
+
+24. cp default 52.149.138.127
+
+25. nano 52.149.138.127
+
+26. edit changes above nano file
+
+Check video for changes
+
+refer image C:\Users\SantoshRekanar\Desktop\MYWORK
+
+Note- Change address
+27. ln -s /etc/nginx/sites-available/40.76.17.154 /etc/nginx/sites-enabled/
+
+28. restart the server
+
+systemctl restart nginx
+
+29. systemctl status nginx
+
+30. to get out from root@ubuntu-vm2 type exit
+
+31. ps to check running processes
+
+32. kill the node process kill 2759
+
+33. bg --- run reatc server in the background
+
+34. disown -h close the secure shell 
+
+35. logout
+
+36. run the application from browser
+
+37. Delte resource Group
+
+az group delete --name res-santh --yes --no-wait
+
+---------------------------------------------	LINUX & SHell Scripting
+
+Software requires operting system on machines for faster executions
+
+Fast running operating
+
+So thats the keypoint/Keytakeway why people use Linux operating system in production environments
+
+Advantages of using Linux Operating system
+
+Free,
+OpenSource,
+Secure,
+Distribution,
+Fast
+
+diff between linux/windows?
+
+What is kernel in operating system?
+
+The responsibility of kernel is to establish communication between hardware and software
+
+4 important aspects of kernel
+
+Heart of any operating system
+
+1. Device management
+2. Memory management
+3. Process management
+4. Handling of system related calls
+
+System libraries user process, system software, Compilers --> system libraries --> Kernel-->CPU/RAM
+
+--------------------------------------Shell scripting
+
+Shell is the way to talk to the operating system
+by using shell commands
+
+Common for all operating systems like Windows, Centos, Fedora, Ubuntu
+
+due their lightweight and faster speeds shell commands used widely in production servers 
+because if we use graphical user interface like windows it utilizes resources/
+
+
+create ubantu VM with admin and password
+
+az vm create --resource-group res-santh --name AZUbantuVM1 --image ubuntu2204 --admin-username azureuser --admin-password UbantuWelcome123! --size Standard_DS1_v2
+
+ssh azureuser@172.191.13.29
+
+PWD --- present Working Directory
+
+mkdir Test
+
+CD Test
+
+cd ../..
+
+CD azureuser/Test123
+
+ls -ltr -- give timestamp
+
+vi oda.txt
+
+:wq
+
+to see contents in a file cat oda.txt
+
+to remove file rm oda.txt
+
+to dir rm -r deletedir
+
+free -g
+
+nproc ---to know the number of cpus
+
+df -h
+
+top -- its like taskmgr
+
+free -- it will show freed up resources
+
+--------------------------------------------------------------
+
+what is automation?
+
+automation is used to reduce maual effort.
+
+touch first-shellscript.sh
+
+ls
+
+ls -ltr
+
+man ls ---- get command description
+
+if we want to copy doubleclick onfile name and do ctrl + V
+
+to open file use vi test.txt
+
+vim test.txt ---> used to write and read files it creates and opend the file
+
+https://github.com/ruanyf/simple-bash-scripts/blob/master/scripts/addition.sh ---- github shell script examples
+
+#!/usr/bin/env bash ---- Used to execute shell script commands. Like inorder to execute shell script an engine is required.
+
+what is difference between between #/bin/sh and #bin/bash
+
+previosuly they are same, but now its not the same some os
+
+#!/bin/bash
+
+to quit any open file q!
+to save and quite any open file wq!
+
+to see the contents of file
+
+cat firstshellscript.sh
+
+to execute shell script we can use 
+
+./firstshellscript.sh
+
+or
+
+sh firstshellscript.sh
+
+#!/usr/bin/env bash
+
+if you get permission denied while executing shell script you need to grant user permission
+
+to give file permission
+
+
+chmod 777 firstshellscript.sh
+
+to list out used commands used in that session
+
+history to see used command till that session
+
+touch command used for automation process
+cat command used to print
+ls -list all the file in dir
+chmod- provide permisson or grant
+man - manuall commad details of the command
+
+rm --- to remove file 
+rm -rf TestFolder
+
+Purpose of shell scripting in DEVOPS
+
+infra maintanancce
+
+using git 
+
+config management
+
+nproc
+free
+top --shows number od processes running on machine
+
+devops use cases shell script
+
+https://www.youtube.com/watch?v=sv6U1rDI3rw
+
+Writing a powershell script
+
+1. Always write meta data what it does in comments #########################
+
+2. use #!/bin/bash
+
+3. set -x # debug mode -- to know which commands got executed use this
+
+4. df -h
+
+5. free -g
+
+6. nproc
+
+
+7. ps -ef
+
+8. ps -ef | grep "amazon"
+
+9. Pipe operator | sends the output of the first command to the second one.
+
+10. ./test.sh | grep 1
+
+11. what is the output of this date | echo "this"
+
+ans: this, because date is of type stdin only commands of type stdout stderr will take input
+
+12. awk --- it will be used to filter out on columns lets say if some one say yo get processed ID'same
+
+ps -ef | grep amazon | awk - F" " '{print $2}' prints second columns
+
+13. grep name test
+
+14. grep name test | awk -F" " '{print $4}' --- output is Santhosh
+
+15. whenever pipecommand is used in script use 
+
+set -e -- exit the script when there is a error in a script.
+
+set -o pipefail -- if there is an error in command like this sdsfsdfsdfs | echo . set -o will handle 
+
+16. curl 
+
+cat logfile | grep error
+
+17. uploaded logs to some storage platfrom like
+azure blob storage
+
+18. how you want to retrive this informtion
+
+provide url of the logfile
+
+curl "http://blob/logfile.log" | grep ERROR
+
+curl -- to get the required output from any external device or internet
+
+19. to call api using curl command
+curl -X GET api.foo.com
+
+20. find / 
+
+root user ----  go to root user for file operations
+
+sudo su -
+
+su harsha
+
+sudo find / -name pam
+
+21. TRAP signal --- used to avoid other user run command on ongonig
+script execution. For exampe:-
+
+If user1 is eexecting any script then other user2 trying to cancle the
+execution of the script using trap we can restrict the user2 commandson the ongoing script.
+
+traps the signals and perfroms the execution
+
+trap "echo dont use the Ctrl+c" SIGINT
