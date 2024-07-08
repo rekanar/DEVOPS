@@ -588,3 +588,5 @@ execution of the script using trap we can restrict the user2 commandson the ongo
 traps the signals and perfroms the execution
 
 trap "echo dont use the Ctrl+c" SIGINT
+
+---------------------------------------
